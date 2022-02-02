@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+  background-color: hsl(233, 47%, 7%);
+}
+
+.wrapper {
+  width: 330px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0.6rem;
+  margin: 50px auto;
+}
+
+.img-box {
+  width: 100%;
+  height: 240px;
+  background-image: url("./images/image-header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.img-box::after {
+  content: "";
+  width: 330px;
+  height: 240px;
+  background-color: hsl(277, 95%, 31%);
+  opacity: 0.6;
+  position: absolute;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+}
+
+.config-main {
+  margin: 20px auto 15px;
+  text-align: center;
+}
+
+.main-box h1 {
+  width: 80%;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.7rem;
+  margin: 35px auto 0;
+}
+
+.main-box span {
+  color: hsl(277, 64%, 61%);
+}
+
+.main-box p {
+  width: 75%;
+  font-size: 0.9rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6rem;
+}
+
+.footer-box {
+  text-align: center;
+  font-family: Inter, sans-serif;
+  padding-bottom: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.footer-box h2 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 30px;
+}
+
+.footer-box p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 1440px;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 1110px;
+    height: 450px;
+    margin: 175px auto;
+  }
+
+  .right {
+    width: 540px;
+    height: 450px;
+    order: 2;
+  }
+
+  .img-box {
+    width: 540px;
+    height: 100%;
+    border-radius: 0 0.6rem 0.6rem 0;
+    background-image: url("./images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img-box::after {
+    content: "";
+    width: 540px;
+    height: 450px;
+    background-color: hsl(277, 95%, 31%);
+    opacity: 0.6;
+    position: absolute;
+    border-radius: 0 0.6rem 0.6rem 0;
+  }
+
+  .config-main {
+    text-align: left;
+  }
+
+  .main-box h1 {
+    width: 70%;
+    margin: 70px auto 0;
+    font-size: 2.2rem;
+  }
+
+  .main-box p {
+    width: 60%;
+    font-size: 0.9rem;
+    margin: 30px 85px;
+  }
+  .footer-box {
+    display: flex;
+    gap: 70px;
+    margin: 10px 75px;
+  }
+
+  .attribution {
+    margin-top: -150px;
+  }
+}
